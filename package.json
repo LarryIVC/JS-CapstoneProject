@@ -1,5 +1,5 @@
 {
-  "name": "javascript-capstone",
+  "name": "JS-CapstoneProject",
   "version": "1.0.0",
   "description": "<a name=\"readme-top\"></a>",
   "private": true,
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Javed-Shahbaz/JavaScript-Capstone.git"
+    "url": "git+git@github.com:LarryIVC/JS-CapstoneProject.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Javed-Shahbaz/JavaScript-Capstone/issues"
+    "url": "https://github.com/LarryIVC/JS-CapstoneProject/issues"
   },
-  "homepage": "https://github.com/Javed-Shahbaz/JavaScript-Capstone#readme",
+  "homepage": "https://github.com/LarryIVC/JS-CapstoneProject/",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
@@ -28,7 +28,7 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.27.5",
-    "hint": "^7.1.8",
+    "hint": "^2.0.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^29.5.0",
     "style-loader": "^3.3.2",
