@@ -1,7 +1,8 @@
-import { getData, countOccurrences } from './ApiSimpson.js';
+import getData from './ApiSimpson.js';
 import iconLike from '../assests/like.png';
 import getLikes from './GetLikes.js';
 import sendLike from './SendLike.js';
+import countOccurrences from './CountOcurrences.js';
 
 // Render cards
 async function renderCards() {
@@ -13,9 +14,6 @@ async function renderCards() {
   data.forEach((episode, index) => {
     const nLikes = nLikesArray[index];
 
-    // data.forEach((episode) => {
-    // for (const episode of data) {
-    // const nLikes = await getLikes(episode.id);
     const doc = document;
     const article = doc.createElement('article');
     article.classList.add('card');
