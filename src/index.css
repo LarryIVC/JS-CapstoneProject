@@ -5,17 +5,17 @@
 }
 
 @font-face {
-  font-family: 'Simpsonfont';
-  src: local('Simpsonfont'), url('./assests/Simpsonfont.woff') format('woff');
+  font-family: "Simpsonfont";
+  src: local("Simpsonfont"), url("./assests/Simpsonfont.woff") format("woff");
 }
 
 body {
-  font-family: 'Simpsonfont', 'Franklin Gothic Medium', sans-serif;
+  font-family: "Simpsonfont", "Franklin Gothic Medium", sans-serif;
   font-size: 16px;
 }
 
 button {
-  font-family: 'Simpsonfont', 'Franklin Gothic Medium', sans-serif;
+  font-family: "Simpsonfont", "Franklin Gothic Medium", sans-serif;
   cursor: pointer;
   width: 90%;
   border: none;
@@ -77,41 +77,6 @@ header {
   text-shadow: 2px 2px 1px hsl(0, 0%, 0%);
 }
 
-/* .menu {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
-.menu ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1.56em;
-}
-
-.menu ul li:hover {
-  transform: scale(1.1);
-}
-
-header span {
-  display: none;
-  color: hsl(13, 87%, 57%);
-}
-
-.link-item {
-  text-decoration: none;
-  font-size: 0.87em;
-  font-weight: 800;
-  color: hsl(56, 100%, 49%);
-  text-shadow: 2px 2px 1px hsl(0, 0%, 0%);
-  transition-duration: 300ms;
-}
-
-.link-item:hover {
-  color: hsl(0, 0%, 100%);
-} */
-
 main {
   width: 80%;
   display: flex;
@@ -134,6 +99,116 @@ h1 {
   gap: 1.25em;
 }
 
+/* loader */
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: #193b6e;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #193b6e;
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1)::after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2)::after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3)::after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4)::after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5)::after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6)::after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7)::after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8)::after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* cards */
 .card {
   display: flex;
   flex-direction: column;
@@ -203,9 +278,29 @@ footer {
   background-color: hsl(98, 47%, 57%);
   padding: 1.25em;
   margin-top: 1.25em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1em;
   font-weight: 700;
   color: hsl(0, 0%, 1%);
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  #dinamic-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+
+  #dinamic-content {
+    grid-template-columns: 1fr;
+  }
 }
