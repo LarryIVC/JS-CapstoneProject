@@ -1,4 +1,4 @@
-import { API_URL1 } from './Vars.js'; // , API_URL2
+import { API_URL1 } from './Vars.js';
 
 // async function getData() {
 const getData = async () => {
@@ -8,9 +8,4 @@ const getData = async () => {
   return json;
 };
 
-const countOccurrences = async () => {
-  const data = await getData();
-  return data.length;
-};
-
-export { getData, countOccurrences };
+export default getData;
