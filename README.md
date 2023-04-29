@@ -70,8 +70,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-  <!-- <a https://github.com/LarryIVC/JS-CapstoneProject">Click here</a> to view live version  -->
-  This feature is not implemented yet
+ <a href="https://js-capstoneproject.netlify.app/">Click here</a> to view live version 
+  <!--  This feature is not implemented yet  -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
