@@ -63,7 +63,7 @@ async function renderCards() {
       }
     });
   });
-  document.getElementById('loader').style.display='none';
+  document.getElementById('loader').style.display = 'none';
 }
 
 const displayCountItems = async () => {
