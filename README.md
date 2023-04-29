@@ -73,6 +73,12 @@
  <a href="https://js-capstoneproject.netlify.app/">Click here</a> to view live version 
   <!--  This feature is not implemented yet  -->
 
+## Video presenting the features of the project
+The Simpsons Fans Club - JavaScript - Capstone - Watch Video
+
+[<img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/25bab32ff01641ffb09fa8977237eefc-with-play.gif">](https://www.loom.com/share/25bab32ff01641ffb09fa8977237eefc)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
