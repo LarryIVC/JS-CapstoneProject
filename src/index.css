@@ -73,3 +73,15 @@ header span {
   color: hsl(200, 87%, 47%);
   transform: scale(1.1);
 }
+
+footer {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: hsl(120, 3%, 6%);
+  text-align: center;
+}
