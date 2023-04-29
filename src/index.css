@@ -3,3 +3,73 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Simpsonfont";
+  src: local("Simpsonfont"), url("./assests/Simpsonfont.woff") format("woff");
+}
+
+body {
+  font-family: "Simpsonfont", "Franklin Gothic Medium", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+#principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(249, 208, 61, 0.5);
+  width: 100%;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 50px;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(200, 87%, 47%);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+header span {
+  display: none;
+  color: hsl(13, 87%, 57%);
+}
+
+.link-item {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  color: hsl(13, 87%, 57%);
+  transition-duration: 300ms;
+}
+
+.link-item:hover {
+  color: hsl(200, 87%, 47%);
+  transform: scale(1.1);
+}
